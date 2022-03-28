@@ -16,3 +16,13 @@ h1{
 .noticias {
     font-family: arial;
 }
+
+th{
+    background-color: gray;
+    color: white;
+}
+
+td{
+    background-color: azure;
+    color: black;
+}
