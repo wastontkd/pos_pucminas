@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paragrafos e titulos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cabecalho">
+        <ul>
+            <li>Sobre a empresa</li>
+            <li>Blog</li>
+            <li>Produtos</li>
+            <li>Serviços</li>
+            <li>Contato</li>
+        </ul>
+
+    </div>
+    <div id="conteudo">
+        <h1>HTML - Paragrafos e Titulos.<img width="50" height="48" src="imgs/html.png" alt="html icon"
+                sytle="float:right;width:50px"></h1>
+        <p>São vários elementos que permitem organizar sua pagina html. São eles: </p>
+        <p>
+        <h3>Elementos</h3>
+        </p>
+        <ol>
+            <li>Titulos = <strong>&lt;h1&gt...&lt;h6&gt;</strong></li>
+            <li>Paragrafos = <strong>&lt;p&gt;</strong></li>
+            <li>Quegra de linha = <strong>&lt;br&gt;</strong></li>
+            <li>Voz Alternativa (Italico) = <strong>&lt;i&gt;</strong></li>
+            <li>Palavra Chave (Negrito) = <strong>&lt;b&gt;</strong></li>
+            <li>Importancia = <strong>&lt;strong&gt;</strong></li>
+            <li>Codigo Fonte = <strong>&lt;code&gt;</strong></li>
+            <li>Texto pre-formatado = <strong>&lt;pre&gt;</strong></li>
+            <li>Citacoes = <strong>&lt;blockquote&gt;</strong></li>
+
+        </ol>
+        <p>No exemplo acima foram usados quase todos os elementos para formatar o texto.
+            Criei as ordens usando uma lista ordenada usando o elemento <strong>&lt;ol&gt;</strong>.</p>
+        <p>A segur um exemplo de lista de definições identadas:</p>
+
+        <dl>
+            <dt>Titulos</dt>
+            <dd><strong>&lt;h1&gt...&lt;h6&gt;</strong></dd>
+            <dt>Paragrafos</dt>
+            <dd><strong>&lt;p&gt;</strong></dd>
+            <dt>Quebra de Linha</dt>
+            <dd><strong>&lt;br&gt;</strong></dd>
+            <dt>Voz Alternativa (Italico)</dt>
+            <dd><strong>&lt;i&gt;</strong></dd>
+            <dt>Importancia</dt>
+            <dd><strong>&lt;strong&gt;</strong></dd>
+            <dt>Codigo Fonte</dt>
+            <dd><strong>&lt;code&gt;</strong></dd>
+            <dt>Texto pre-formatado</dt>
+            <dd><strong>&lt;pre&gt;</strong></dd>
+            <dt>Citacoes</dt>
+            <dd><strong>&lt;blockquote&gt;</strong></dd>
+        </dl>
+
+
+        <p>Todos os itens estudados aqui, estão na pagina da aula sobre Paragrafos e titulos. Link da aula:
+            <a href="https://pucminas.instructure.com/courses/89594/pages/unidade-2-4-elementos-de-texto-e-multimidia?module_item_id=2032201"
+                target="_blank">Aula sobre elementos de paragrafos e titulos.</a>
+        </p>
+
+        <h1>
+            Utilizando tabelas para organização dos dados!<img width="50" height="48" src="imgs/html.png"
+                alt="html icon" sytle="float:right;width:50px">
+        </h1>
+        <p>
+            No exemplo a seguir, iremos organizar as informações do exemplo anterior em tabelas de dado usando a tag
+            &lt;table&gt. Segue o exemplo:
+        </p>
+        <table border="1">
+            <caption><b>Paragrafo e Titulos</b></caption>
+            <thead>
+                <tr>
+                    <th>Elementos</th>
+                    <th>Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Titulos</td>
+                    <td><strong>&lt;h1&gt...&lt;h6&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Paragrafos</td>
+                    <td><strong>&lt;p&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Quebra de linha</td>
+                    <td><strong>&lt;br&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Voz Alternativa (italico)</td>
+                    <td><strong>&lt;i&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Importancia</td>
+                    <td><strong>&lt;strong&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Codigo Fonte</td>
+                    <td><strong>&lt;code&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Texto Pre-formatado</td>
+                    <td><strong>&lt;pre&gt;</strong></td>
+                </tr>
+                <tr>
+                    <td>Citacoes</td>
+                    <td><strong>&lt;blockquote&gt;</strong></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <p>A seguir outro exemplo de table, dessa vez usando formatacao através do CSS e usando o plugin
+            <strong>EMMET</strong>:
+        </p>
+        <table id="tabela_full">
+            <caption>MEUS CONTATOS</caption>
+            <tr>
+                <th>Pais</th>
+                <th>Nome Completo</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Categoria</th>
+            </tr>
+            <tr>
+                <td rowspan="4">Brasil</td>
+                <!-- Isto irá agrupar as linhas, semelhante a mesclar celulas no google sheets / excel-->
+                <td>José Pereira de Lima Neto</td>
+                <td>99141557</td>
+                <td>Caruaru</td>
+                <td>PE</td>
+                <td>Irmão</td>
+            </tr>
+            <tr>
+                <td>Medicis Buarque</td>
+                <td>987229288</td>
+                <td>Recife</td>
+                <td>PE</td>
+                <td>Esposa</td>
+            </tr>
+            <tr>
+                <td>Matheus Lich</td>
+                <td>888522222</td>
+                <td>Rondonia</td>
+                <td>RO</td>
+                <td>Primo</td>
+            </tr>
+            <tr>
+                <td>Antonia Duarte</td>
+                <td>898989898</td>
+                <td>Recife</td>
+                <td>PE</td>
+                <td>Sobrinha</td>
+            </tr>
+        </table>
+
+        <p>Agora vamos visualizar uma pagina com segmentação usando <strong><strong>&lt;DIV&gt;</strong></strong></p>
+
+        <p>Agra iremos utilizar Formulários para obter dados dos usuários: elementos de formulários e avançados </p>
+
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                Nome: <input type="text" name="nome" required><br>
+                Email: <input type="email" name="email"><br>
+                Data de Nascimento: <input type="date" name="dt"><br>
+                Sexo: <br>
+                <input type="radio" name="sex" value="male">Masculino <br>
+                <input type="radio" name="sex" value="female">Feminino <br>
+            </fieldset>
+            <fieldset>
+                <legend>Quero:</legend>
+                <input type="checkbox" name="acao" value="vel"> Ver teste de velocidade <br>
+                <input type="checkbox" name="acao" value="ga"> Verificar google analytics <br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form> <br>
+
+        <form action="demo_form.html" method="post">
+            Caixa de sugestões<br>
+            <textarea name="texto" id="" cols="30" rows="10">
+                Coloque suas sugestões aqui
+            </textarea>
+        </form> <br> <br>
+        <label for="frutas">Sacola de Frutas: </label>
+        <select name="fruta">
+            <option value="">Selecione uma Fruta</option>
+            <option value="abacaxi">Abacaxi</option>
+            <option value="ameixa">Ameixa</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+            <option value="manga">Manga</option>
+            <option value="uva">Uva</option>
+        </select><br><br>
+
+        <p>Aqui esto introduzindo elementos de scripts JS na pagina:</p>
+
+        <!--referencia a um arquivo externo-->
+        <script src="arquivo.js"></script>
+        <!--Incluindo código de script na propria pagina-->
+        <script>
+            alert('Seja bem vindo ao nosso site');
+        </script>
+
+        <p>Incluindo elementos de integração:</p>
+
+        <iframe width="560" height="315" src="http://www.youtube.com/watch?v=HJWFsZ_YUc4" frameborder="0"
+            allow="accelerometer; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <div id="menu_contexto">
+        <ul>
+            <li>Pesquisa</li>
+            <li>Categorias</li>
+            <li>Historico</li>
+        </ul>
+    </div>
+    <div id="rodape">
+        <p>Copyright (2022)</p>
+    </div>
+</body>
+
+</html>

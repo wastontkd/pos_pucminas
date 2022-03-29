@@ -26,3 +26,19 @@ td{
     background-color: azure;
     color: black;
 }
+
+#conteudo{
+    width: 80%;
+    background-color: chartreuse;
+}
+
+#menu_contexto{
+    width: 10%;
+    background-color: aqua;
+    float: left;
+}
+
+#rodape{
+    background-color: gray;
+    clear: both;
+}
